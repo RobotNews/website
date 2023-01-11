@@ -1,22 +1,55 @@
  <html>
     <head>
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type=text/css>
+            body {
+                height: 125vh;
+                margin-top: 80px;
+                padding: 30px;
+                background-size: cover;
+                font-family: sans-serif;
+            }
+
+            header {
+                background-color: blue;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 5px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                box-shadow: 0 0 25px 0 black;
+            }
+             header * {
+                display: inline;
+             }
+             header li {
+                margin: 20px;
+             }
+             header li a {
+                color: white;
+                text-decoration: none;
+             }
+        </style>
     </head>
     <body>
-        <div class="page-header">
-            <!-- Your nav-bar comes here -->
-        </div>
-
-        <div id="navigation-bar" class="nav-bar">
-            <a class="active"> HOME </a>
-            <a> PROFILE </a>
-            <a> ABOUT  </a>
-            <a> SIGN IN </a>
-        </div>
-
-        <script>
-
-        </script>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Humanoid</a>
+                    </li>
+                    <li>
+                        <a href="#">Animal</a>
+                    </li>
+                    <li>
+                        <a href="#">Arms</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </body>
 </html>
