@@ -17,6 +17,50 @@
             center: 0;
             right: 100;
           }
+
+          .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
+          #main {
+            transition: margin-left .5s;
+            padding: 16px;
+          }
+
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
         </style>
     </head>
     <body style="background-color:darkgray;">
@@ -37,6 +81,22 @@
               </ul>
             </nav>
           </div>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>></a>
+            <a href="index.html">Home</a>
+            <a href="Humanoid.html">Humanoid</a>
+            <a href="about.html">About</a>
+            <a href="types.html">Types</a>
+            <a href="Animal.html">Animal</a>
+            <a href="AI.html">AI</a>
+          </div>
+
+          <div id="main">
+            <h1>Home</h1>
+            <p>Click below to see the Navigation Bar</p>
+            <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776; open</span>
+          </div>
           
           <p id="firstText">
             Welcome to Robot Central. Check out the different sections to learn about upcoming robots and learn about robots that are already here.
@@ -47,33 +107,16 @@
             You can also see updates and pictures on robots im building.
           </p>
 
-          <div id="navlist">
-            <a href="#">Home</a>
-            <a href="#">Our Products</a>
-            <a href="#">Careers</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-             
-            <!-- search bar right align -->
-            <div class="search">
-                 
-                <form action="#">
-                    <input type="text"
-                        placeholder=" Search Courses"
-                        name="search">
-                    <button>
-                        <i class="fa fa-search"
-                            style="font-size: 18px;">
-                        </i>
-                    </button>
-                </form>
-            </div>
-        </div>
-
-
-
         <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
 
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+          }
         </script>
     </body>
 </html>
