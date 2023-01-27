@@ -18,22 +18,70 @@
                 border-color: #000000;
                 padding: 1em;
             }
+
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
+          #main {
+            transition: margin-left .5s;
+            padding: 16px;
+          }
+
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
         </style>
     </head>
     <body style="background-color: darkgray;">
         <h1 style="text-align: center;" id="humanoidTitle"><u>Humanoid Robots</u></h1>
 
-        <nav>
-            <ul>
-              <li><strong><img src="Humanoid Robots button.png" width="140" height="70"></strong></li>
-              <li><a href="types.html"><img src="Humanoid Robots button.png" width="140" height="70"></a></li>
-              <li><a href="about.html"><img src="Social button.png" width="140" height="70"></a></li>
-              <li><a href="index.html"><img src="Home button.png" width="140" height="70"></a></li>
-              <li><a href="myRobotUpdate.html"><img src="My Robot Updates button.png" width="140" height="70"></a></li>
-              <li><a href="Animal.html"><img src="Animal Robots button.png" width="140" height="70"></a></li>
-              <li><a href="AI.html"><img src="AI button.png" width="140" height="70"></a></li>
-            </ul>
-          </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>></a>
+            <a href="index.html">Home</a>
+            <a href="Humanoid.html">Humanoid</a>
+            <a href="AI.html">AI</a>
+            <a href="types.html">Types</a>
+            <a href="Animal.html">Animal</a>
+            <a href="about.html">About</a>
+          </div>
+    
+          <div id="main">
+            <h1>Humanoid</h1>
+            <p>Click below to see the Navigation Bar</p>
+            <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776; open</span>
+          </div>
 
         <h3><u>Boston Dynamics</u></h3>
         <p>Boston Dynamics goal is to create robots that enrich people's lives.
