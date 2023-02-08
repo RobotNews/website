@@ -52,6 +52,13 @@
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 18px;}
           }
+
+          #textBox {
+            background-color: lightslategrey;
+            position: absolute;
+            top: 125;
+            left: 300;
+          }
         </style>
     </head>
     <body style="background-color: darkgray; font-family: sans-serif;">
@@ -75,20 +82,31 @@
             <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776; open</span>
           </div>
         
-        <h3><u>Boston Dynamics</u></h3>
-        <p>One of Boston Dynamics most recognizable robots is Spot.</p>
+          <div id="textBox">
+            <h3><u>Boston Dynamics</u></h3>
+            <p>One of Boston Dynamics most recognizable robots is Spot.</p>
+    
+            <h4><u>Boston Dynamics Spot</u></h4>
+            <p>Spot is one of the most if not the most advanced robot dog in the world.
+                According to <a href="https://www.bostondynamics.com/products/spot">the Boston Dynamics website</a> Spot can carry up to 14kg(about 30 pounds)
+                of inspection equipment. They also say it is easy to from afar with a intuitive tablet app and built in stereo cameras. They also say you can program repeatable
+                autonomous missions to gather consistent data. It also has 360 degree perception it can use to map the terrain and avoid obstacles as they appear.
+                It has the ability to balance dynamically in uncertain surroundings with a payload up to 14kg(about 30 pounds). Its also capable of moving over almost all terrain.
+            </p>
 
-        <h4><u>Boston Dynamics Spot</u></h4>
-        <p>Spot is one of the most if not the most advanced robot dog in the world.
-            According to <a href="https://www.bostondynamics.com/products/spot">the Boston Dynamics website</a> Spot can carry up to 14kg(about 30 pounds)
-            of inspection equipment. They also say it is easy to from afar with a intuitive tablet app and built in stereo cameras. They also say you can program repeatable
-            autonomous missions to gather consistent data. It also has 360 degree perception it can use to map the terrain and avoid obstacles as they appear.
-            It has the ability to balance dynamically in uncertain surroundings with a payload up to 14kg(about 30 pounds). Its also capable of moving over almost all terrain.
-        </p>
-        
+            <h4><u>Rats with Backpacks</u></h4>
+            <p>A student at the Dutch Technical University of Eindhoven, demonstrated how rats can sniff out buried victims. The rats are aided by high-tech backpacks that gives the rats a communication link back to the human handler.
+              All this is done in association with Belgian-registered and Tanzania-based NGO APOPO, their achievements include training gold medal winning Magawa the rat, who helped find 71 landmines and lots more types of UXO over a 5-year career. The ladmine hunting rats are called HeroRATs and they hae been helping demine countries since the 1990s.
+              Each RescueRat has a backpack with a camera and battery, and also a GPS and altimeter. Every backpack has a button that the rats have been trained to press when they've found a victim.
 
-        <h4 id="sources"><u>Sources</u></h4>
-        <p><a href="https://www.bostondynamics.com/products/spot#id_second">Boston Dynamics Website</a></p>
+            </p>
+            
+    
+            <h4 id="sources"><u>Sources</u></h4>
+            <p><a href="https://www.bostondynamics.com/products/spot#id_second">Boston Dynamics Website</a></p>
+            <p><a href="https://hackaday.com/2023/02/05/equipping-rats-with-backpacks-to-find-victims-under-rubble/">Rats With Backpacks</a></p>
+    
+          </div>
 
         <script>
           function openNav() {
